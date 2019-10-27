@@ -1,0 +1,110 @@
+*,
+html,
+body {
+  background-color: rgb(34, 34, 37);
+  margin: 0;
+  padding: 0;
+  color: gray;
+  font-family: 'Rockwell';
+}
+
+button {
+  outline: none !important;
+}
+
+.app {
+  display: grid;
+  height: 400px;
+  width: 100vw;
+  position: relative;
+}
+
+.app__title {
+  width: 100%;
+  border-bottom: 1px solid rgba(0, 145, 234, 0.2);
+}
+
+.app__title p {
+  display: block;
+  font-size: 18px;
+  padding: 10px 10px 0px ;
+  text-align: center;
+  color: rgba(0, 145, 234, 0.5);
+}
+
+.app__configuration {
+  margin-top: -70px;
+  padding: 0 20px;
+}
+
+.app__configuration--table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.app__configuration--table td {
+  border: 1px solid rgba(0, 145, 234, 0.2);
+  padding: 15px 5px;
+  font-size: 12px;
+  min-width: 100px;
+  text-align: center;
+  border-left: none;
+  border-right: none;
+}
+
+.action {
+  padding: 0px 5px;
+}
+
+
+.up i{
+  color: rgba(0, 145, 234, 0.5);
+}
+
+.down i{
+  color: rgba(255, 0, 0, 0.3);
+  border-color: rgba(255, 0, 0, 0.3);
+}
+
+.important {
+  color: rgba(0, 145, 234, 0.5);
+  font-weight: bold;
+}
+
+.button {
+  height: 30px;
+  min-width: 40vw;
+  margin-top: 10px;
+  border-radius: 2px;
+  box-shadow: 1px 1px;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  position: relative;
+}
+
+.app__actions--quit {
+  display: flex;
+  flex-direction: column;
+  border-color: rgba(255, 0, 0, 0.3);
+  color: rgba(255, 0, 0, 0.3);
+}
+
+.app__actions--save {
+  display: flex;
+  flex-direction: column;
+  border-color: rgba(0, 145, 234, 0.5);
+  color: rgba(0, 145, 234, 0.5);
+}
+
+.app__actions {
+  position: absolute;
+  min-width: 100vw;
+  bottom: 30px;
+  left: 0;
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+  align-items: center;
+  justify-content: space-around;
+}

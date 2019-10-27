@@ -1,13 +1,63 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8">
-    <title>Hello World!</title>
-  </head>
-  <body>
-    <h1>Hello World!</h1>
-    We are using node <script>document.write(process.versions.node)</script>,
-    Chrome <script>document.write(process.versions.chrome)</script>,
-    and Electron <script>document.write(process.versions.electron)</script>.
-  </body>
+
+<head>
+  <link rel="stylesheet" href="./style/style.css">
+  <meta charset="UTF-8">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+  <div class="app">
+    <div class="app__title">
+      <p>DBKMVBRDZVFE</p>
+    </div>
+
+    <div class="app__configuration">
+      <table class="app__configuration--table">
+        <tr>
+          <td>Overall Activity</td>
+          <td id="overallActivity" class="important"></td>
+          <td>
+            <span id="activity-up" class="up action"><i class="material-icons">expand_less</i></span>
+            <span id="activity-down" class="down action"><i class="material-icons">expand_more</i></span>
+          </td>
+        </tr>
+        <tr>
+          <td>Mouse Activity</td>
+          <td id="mouseActivity" class="important"></td>
+          <td>
+            <span id="mouse-activity-up" class="up action"><i class="material-icons">expand_less</i></span>
+            <span id="mouse-activity-down" class="down action"><i class="material-icons">expand_more</i></span>
+          </td>
+        </tr>
+        <tr>
+          <td>Keyboard Activity</td>
+          <td id="keyboardActivity" class="important"></td>
+          <td>
+            <span id="keyboard-activity-up" class="up action"><i class="material-icons">expand_less</i></span>
+            <span id="keyboard-activity-down" class="down action"><i class="material-icons">expand_more</i></span>
+          </td>
+        </tr>
+        <tr>
+          <td>Steal Time ( min/h )</td>
+          <td id="stealMinutesPerHour" class="important"></td>
+          <td>
+            <span id="steal-time-up" class="up action"><i class="material-icons">expand_less</i></span>
+            <span id="steal-time-down" class="down action"><i class="material-icons">expand_more</i></span>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="app__actions">
+      <button class="app__actions--save button" id="save-app-button">Save & Restart</button>
+      <button class="app__actions--quit button" id="quit-app-button">Exit</button>
+    </div>
+
+  </div>
+</body>
+
+<script src="./services/renderer.js"></script>
+
 </html>
