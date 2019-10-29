@@ -53,6 +53,6 @@ Once you start the app, the menu icon will appear on your system tray. When you 
 ## Enjoy!
 
 **Authors**
-- [cili93]([https://github.com/cili93](https://github.com/cili93))
-- [rasha08]([https://github.com/rasha08](https://github.com/rasha08))
+- [cili93](https://github.com/cili93)
+- [rasha08](https://github.com/rasha08)
 
