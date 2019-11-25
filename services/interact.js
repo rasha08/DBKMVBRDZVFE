@@ -1,7 +1,7 @@
 'use strict'
 
 const { executeCallbackTimesWithDelay, reverse } = require('./utils')
-const { random } = require('lodash')
+const { random, map } = require('lodash')
 const robot = require("robotjs");
 
 robot.setMouseDelay(2);
@@ -16,7 +16,7 @@ const releaseKey = (key) => robot.keyToggle(key, 'up')
 const pressKey = (key) => robot.keyToggle(key, 'up')
 const tapKey = (...keys) => robot.keyTap(...keys)
 const moveMouseRandomly = () => robot.moveMouse(random(1000), random(1000))
-const releaseTabChangeButtons = () => interactOnce(map(changeTabKeys, releaseKey))
+const releaseTabChangeButtons = () => interactOnce(() => map(changeTabKeys, releaseKey) )
 const pressTabChangeButtons = () => tapKey(...reverse(changeTabKeys))
 
 
