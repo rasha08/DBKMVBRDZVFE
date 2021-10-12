@@ -1,7 +1,7 @@
 {
     "name": "DBKMVBRDZVFE",
     "dependencies": {
-        "electron": "^3.0.0",
+        "electron": "^11.5.0",
         "lodash": "^4.17.15",
         "menubar": "^7.0.0",
         "robotjs": "^0.5.1",
