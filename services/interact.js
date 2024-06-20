@@ -2,7 +2,7 @@
 
 const { executeCallbackTimesWithDelay, reverse } = require('./utils')
 const { random, map } = require('lodash')
-const robot = require("robotjs");
+const robot = require("@jitsi/robotjs");
 
 robot.setMouseDelay(2);
 robot.setKeyboardDelay(2)
